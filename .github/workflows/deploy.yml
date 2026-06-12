@@ -22,4 +22,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: muhmubeen1/devops-ci-cd-node-api:latest
+          tags: heraclitus01/devops-ci-cd-node-api:latest
