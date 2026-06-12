@@ -11,6 +11,12 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
       - name: Install Dependencies
         run: npm install
 
@@ -27,4 +33,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: heraclitus01/devops-ci-cd-node-api:latest
+          tags: muhmubeen1/devops-ci-cd-node-api:latest
